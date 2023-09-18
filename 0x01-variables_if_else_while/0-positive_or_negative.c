@@ -3,10 +3,9 @@
 #include <stdio.h>
 
 /**
- * main - This is the main function.
- * It prints a message using the printf function.
- *
- * Return: 0 (indicating successful execution)
+ * main - Positive anything is better than negative nothing
+ * Description: Complete the source code in order to print whether the number stored in the variable n is positive or negative.
+ * Return: 0 (successful execution)
  */
 int main(void)
 {
@@ -14,21 +13,11 @@ int main(void)
 
         srand(time(0));
         n = rand() - RAND_MAX / 2;
-
-
-        /*check the boolean condition*/
         if (n > 0)
-        {
-        /*if n is greater than zero print*/
                 printf("%d is positive\n", n);
-        } else if  (n == 0)
-        {
-        /* if n is equal to zero print*/
+        else if  (n == 0)
                 printf("%d is zero\n", n);
-        } else if (n < 0)
-        {
-        /* if n is less than zero print*/
+        else if (n < 0)
                 printf("%d is negative\n", n);
-        }
         return (0);
 }
