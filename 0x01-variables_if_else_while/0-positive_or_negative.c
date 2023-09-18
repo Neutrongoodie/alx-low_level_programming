@@ -4,8 +4,7 @@
 
 /**
  * main - This is the main function.
- * It prints a message using the printf function.
- *
+ * It prints a message using the printf function
  * Return: 0 (indicating successful execution)
  */
 int main(void)
