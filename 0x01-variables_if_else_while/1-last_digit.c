@@ -1,20 +1,33 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
-/**
- * main -m This is the entry point of my program
- * Return: 0 (this indicate successful execution)
- */
-int main()
-{
-	int n;
-	int g;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	 for (g = 0; g < 9; g++)
-		 putchar(g + '0');
-	         putchar(n + '0');
-	 if (g < 8 || n < 9)
-		 putchar('\n');
-	 return (0);
+/**
+ * main - Entry point of the program
+ *
+ * Description: This program prints the sizes of various data types.
+ *
+ * Return: Always 0 (indicating successful execution)
+ */
+int main(void)
+{
+        int m;
+        int n;
+
+        for (m = 0; m < 9; m++)
+        {
+        for (n = m + 1; n < 10; n++)
+        {
+        /*prints the unique combo of the 2 digits*/
+                putchar(m + '0');
+                putchar(n + '0');
+        if (m < 8 || n < 9)
+        {
+                putchar(',');
+                putchar(' ');
+        }
+        }
+        }
+
+        putchar('\n');
+
+        return (0);
+}
