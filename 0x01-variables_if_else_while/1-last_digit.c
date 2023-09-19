@@ -12,12 +12,9 @@ int main()
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	n = n % 10;
-	if (g > 5)
-		printf("Last digit of %d is %d and is greater than 5\n", n, g);
-	if (g == 0)
-		printf("Last digit of %d is %d and is 0\n", n, g);
-	if (n < 6 && g != 0)
-		("Last digit of %d is %d and is less than 6 and not 0\n", n, m);
-	retuen (0);
-}
+	 for (g = 0; g < 9; g++)
+		 putchar(g + '0');
+	         putchar(n + '0');
+	 if (g < 8 || n < 9)
+		 putchar('\n');
+	 return (0);
