@@ -1,33 +1,25 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
-/**
- * main - Entry point of the program
- *
- * Description: This program prints the sizes of various data types.
- *
- * Return: Always 0 (indicating successful execution)
- */
-int main(void)
-{
-        int m;
-        int n;
+int main() {
+    // Seed the random number generator
+    srand(time(0));
 
-        for (m = 0; m < 9; m++)
-        {
-        for (n = m + 1; n < 10; n++)
-        {
-        /*prints the unique combo of the 2 digits*/
-                putchar(m + '0');
-                putchar(n + '0');
-        if (m < 8 || n < 9)
-        {
-                putchar(',');
-                putchar(' ');
-        }
-        }
-        }
+    // Generate a random number between 0 and RAND_MAX
+    int n = rand();
 
-        putchar('\n');
+    // Extract the last digit of n
+    int lastDigit = n % 10;
 
-        return (0);
+    printf("The string Last digit of %d is ", n);
+    
+    if (lastDigit > 5)
+        printf("and is greater than 5\n");
+	else if (lastDigit == 0\)
+        printf("and is 0\n")
+	else 
+        printf("and is less than 6 and not 0\n");
+
+    return 0;
 }
