@@ -6,16 +6,11 @@
  */
 int main(void)
 {
-        char letter;
+	char letter = 'a';
+	while (letter <= 'z')
+		putchar(letter);
+	letter++;
+	putchar('\n');
 
-        for (letter = 'a'; letter <= 'z'; letter++)
-        {
-        /*prints the value of the alphabet*/
-                putchar(letter);
-
-        }
-        /*adds a new line to the end of each letter*/
-        putchar('\n');
-
-        return (0);
+	return (0)
 }
