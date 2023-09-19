@@ -1,24 +1,23 @@
+#include <stdlib.h>
+#include <time.h>
 #include <stdio.h>
-
 /**
- * main - Entry point of the program
- *
- * Description: This program prints the sizes of various data types.
- *
- * Return: Always 0 (indicating successful execution)
+ * main -m This is the entry point of my program
+ * Return: 0 (this indicate successful execution)
  */
-int main(void)
-        {
-        char letter;
+int main()
+{
+	int n;
+	int g;
 
-        for (letter = 'a'; letter <= 'z'; letter++)
-        {
-        /*prints the value of the alphabet*/
-                putchar(letter);
-
-        }
-        /*adds a new line to the end of each letter*/
-        putchar('\n');
-
-        return (0);
-        }
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	n = n % 10;
+	if (g > 5)
+		printf("Last digit of %d is %d and is greater than 5\n", n, g);
+	if (g == 0)
+		printf("Last digit of %d is %d and is 0\n", n, g);
+	if (n < 6 && g != 0)
+		("Last digit of %d is %d and is less than 6 and not 0\n", n, m);
+	retuen (0);
+}
