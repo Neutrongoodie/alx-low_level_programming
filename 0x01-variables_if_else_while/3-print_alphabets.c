@@ -1,21 +1,22 @@
 #include <stdio.h>
-
 /**
- * main - Entry point of the program
- *
- * Description: This program prints the sizes of various data types.
- *
- * Return: Always 0 (indicating successful execution)
+ * main - Entry poit of my program
+ * Return:0 (success)
  */
+
 int main(void)
 {
-        char letter;
+	char letter;
 
-        for (letter = 'a'; letter <= 'z'; letter++)
-                putchar(letter);
-        for (letter = 'A'; letter <= 'Z'; letter++)
-                putchar(letter)
-		       	putchar('\n');
+	letter = 'a';
+	while
+		(letter <= 'z')
+		{putchar(letter); letter++;}
+	letter = 'A';
+	while
+		(letter <= 'Z')
+		{putchar(letter); letter++;}
+	putchar('\n')
 
-        return (0);
+		return (0)
 }
