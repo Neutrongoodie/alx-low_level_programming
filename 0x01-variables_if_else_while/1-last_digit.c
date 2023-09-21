@@ -1,11 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
-int main(void)
+/**
+ * main - This is the entry oint of my program
+ * Return: 0 (This show it is successful)
+ */
+int main(c=void)
 {
+	int g;
 	int n;
-	int m;
 
 	for (m = 0; m < 9; m++)
 		for (n = m + 1; n < 10; n++)
@@ -16,5 +19,5 @@ int main(void)
 	putchar(' ');
 	putchar('\n');
 
-	return (0);
+	return 0;
 }
