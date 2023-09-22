@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 /**
  * _strcat - Concatenates two strings.
@@ -6,7 +5,6 @@
  * @src: The source string (describe the source string).
  * Return: 0
  */
-int main(void)
 char *_strcat(char *dest, char *src);
 {
 	int k = 0;
