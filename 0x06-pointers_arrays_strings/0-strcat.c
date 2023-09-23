@@ -1,11 +1,13 @@
 #include <stdio.h>
+#include "main.h"
+
 /**
  * _strcat - Concatenates two strings.
  * @dest: The destination string(describe thr desitination string).
  * @src: The source string (describe the source string).
  * Return: 0
  */
-char *_strcat(char *dest, char *src);
+char *_strcat(char *dest, char *src)
 {
 	int k = 0;
 	int l = 0;
